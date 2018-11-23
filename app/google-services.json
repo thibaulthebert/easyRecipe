@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "844731218500",
+    "firebase_url": "https://easy-recipe-8fb5a.firebaseio.com",
+    "project_id": "easy-recipe-8fb5a",
+    "storage_bucket": "easy-recipe-8fb5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844731218500:android:bdcd1d0ee256b9e0",
+        "android_client_info": {
+          "package_name": "com.example.zahut.easyrecipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844731218500-f52up78o6qjtpo0psbu7t7jqisd4tq94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zahut.easyrecipe",
+            "certificate_hash": "1449ccfc590ac6b54caca2235797f343f009adaa"
+          }
+        },
+        {
+          "client_id": "844731218500-7uq62ff9jvsqhhe061nnahkathdk3d4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJrPfCMDYN7y2XWZDd8zgIEUdxbM4-iWA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844731218500-7uq62ff9jvsqhhe061nnahkathdk3d4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

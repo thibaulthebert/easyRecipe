@@ -1,0 +1,37 @@
+[{
+  "name": "Tartelette aux fraises et rhubarb",
+  "ingredient": [
+    "fraise",
+    "farine",
+    "beurre",
+    "sucre",
+    "oeuf",
+    "sel",
+    "rhubarbe",
+    "oeuf",
+    "sucre",
+    "maizena"
+  ]
+},{
+  "name": "Galettes bretonnes",
+  "ingredient": [
+    "farine",
+    "sucre",
+    "sucre-vanille",
+    "beurre",
+    "lait",
+    "oeuf",
+    "sel",
+    "cannelle",
+    "jaune-d-oeuf"
+  ]
+},{
+  "name": "Cote de boeuf barbecue au gros sel",
+  "ingredient": [
+    "cote-de-boeuf",
+    "gros-sel",
+    "huile-d-olive",
+    "herbes-de-provence",
+    "poivre"
+  ]
+}]

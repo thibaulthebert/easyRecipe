@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".webViewActivity"></activity>
         <activity android:name=".swipeActivity" />
         <activity android:name=".chooseLoginOrRegistration">
             <intent-filter>
@@ -20,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".registerActivity" />
-        <activity android:name=".loginActivity"></activity>
+        <activity android:name=".loginActivity" />
     </application>
 
 </manifest>

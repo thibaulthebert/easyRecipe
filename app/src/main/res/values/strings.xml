@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">easyRecipe</string>
+    <string name="title_activity_web_view">webViewActivity</string>
+    <string name="button_to_webview">WebView</string>
 </resources>

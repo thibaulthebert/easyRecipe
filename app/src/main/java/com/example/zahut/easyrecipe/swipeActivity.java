@@ -1,15 +1,21 @@
 package com.example.zahut.easyrecipe;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.InputStream;
 import java.util.ArrayList;
 
 public class swipeActivity extends AppCompatActivity {
@@ -23,16 +29,36 @@ public class swipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.swipe_activity);
 
+        String text = "";
+        try {
+            InputStream is = getAssets().open("recipe.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            text = new String(buffer);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Log.d("json", text);
 
-        al = new ArrayList<>();
-        al.add("php");
-        al.add("c");
-        al.add("python");
-        al.add("java");
-        al.add("html");
-        al.add("c++");
-        al.add("css");
-        al.add("javascript");
+        try {
+
+            JSONArray jsonArray = new JSONArray(text);
+
+            al = new ArrayList<>();
+
+            for (int j = 0; j < jsonArray.length(); j++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(j);
+                String name = jsonObject.getString("name");
+                al.add(name);
+            }
+
+        } catch (Throwable t) {
+            String msg = t.getMessage();
+            Log.e("My App", "Could not parse malformed JSON: \"" + msg + "\"");
+        }
+
 
         arrayAdapter = new ArrayAdapter<>(this, R.layout.item, R.id.helloText, al);
 
@@ -83,7 +109,6 @@ public class swipeActivity extends AppCompatActivity {
                 Toast.makeText(swipeActivity.this, "Click!", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }
 

@@ -17,6 +17,14 @@ public class chooseLoginOrRegistration extends AppCompatActivity {
         goLoginBtn = (Button) findViewById(R.id.goLogin);
         goRegisterBtn = (Button) findViewById(R.id.goRegister);
 
+        Button button = findViewById(R.id.goToWebView);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(chooseLoginOrRegistration.this, webViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
         goLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
